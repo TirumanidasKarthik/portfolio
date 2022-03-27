@@ -1,0 +1,60 @@
+/*---------------------IDs--------------*/
+
+#moreDropdown{
+    
+    position:relative;
+    float: right;
+    width: 100px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+#moreDropdown > a:hover{
+    cursor: pointer;
+}
+#moreDropdownContent{
+    display: none;
+    list-style-type:none;
+    position: relative; 
+    width: auto;
+    background-color: #CBBBBB;
+    text-align: center;
+    padding: 5px;
+    
+}
+#moreDropdownContent > li > a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+#navText{
+    color:cyan;
+}
+#moreDropdown > a{
+    color:mediumspringgreen;
+}
+body{
+    margin:0;
+}
+/* header{
+    overflow: hidden;
+} */
+nav{
+    height: 30px;
+    width: auto;
+    background-color: #A39D9C;
+    text-align: center;
+}
+nav > #nav-list{
+    list-style-type: none;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+nav > #nav-list > .nav-list_leftContent{
+    float: left;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 5px;
+}
