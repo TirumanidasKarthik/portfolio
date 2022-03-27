@@ -1,4 +1,4 @@
-const resumePath = "files/resume.pdf";
+const resumePath = "files/myResume.pdf";
 const moreLinkId = document.getElementById("moreLink");
 const moreDropdownContentId = document.getElementById("moreDropdownContent");
 const moreDropdownCaret = document.getElementById("moreDropdownCaret");
