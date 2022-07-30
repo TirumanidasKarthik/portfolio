@@ -1,26 +1,56 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>My Portfolio</title>
-        
+        <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul id="nav-list">
-                    <li class="nav-list_leftContent"><a id = "navText">Hi..</a></li>
-                    <li id="moreDropdown"><a id="moreLink"><i id = "moreDropdownCaret" class="fa fa-caret-down" style="color: mediumspringgreen;">&nbsp;</i>More</a>
-                        <ul id="moreDropdownContent">
-                            <li><a onclick="viewResume()">View Resume</a></li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-                
-            </nav>
-        </header>
+        <div class = "wrapper">
+            <div class="slidebar">
+                <div class="profile">
+                    <img src="files/photo">
+                    <h3>Karthik Tirumanidas</h3>
+
+                </div>
+                <div class="dashboard">
+                    <ul>
+                        <li>
+                            <a href="#"><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Experience</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Education</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Projects</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Resume</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Links</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- handburger -->
+            <div class="section">
+                <div class="top_navbar">
+                    <div class="hamburger">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+       
+        
+
         
 
     </body>

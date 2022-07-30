@@ -1,60 +1,87 @@
-/*---------------------IDs--------------*/
-
-#moreDropdown{
-    
-    position:relative;
-    float: right;
-    width: 100px;
-    text-align: center;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-right: 10px;
-}
-#moreDropdown > a:hover{
-    cursor: pointer;
-}
-#moreDropdownContent{
-    display: none;
-    list-style-type:none;
-    position: relative; 
-    width: auto;
-    background-color: #CBBBBB;
-    text-align: center;
-    padding: 5px;
-    
-}
-#moreDropdownContent > li > a{
-    text-decoration: none;
-    color:white;
-    cursor: pointer;
-}
-#navText{
-    color:cyan;
-}
-#moreDropdown > a{
-    color:mediumspringgreen;
-}
 body{
-    margin:0;
+    margin: 0;
 }
-/* header{
-    overflow: hidden;
-} */
-nav{
-    height: 30px;
-    width: auto;
-    background-color: #A39D9C;
-    text-align: center;
-}
-nav > #nav-list{
-    list-style-type: none;
-    overflow: hidden;
-    margin:0;
-    padding: 0;
-}
-nav > #nav-list > .nav-list_leftContent{
+
+.slidebar{
+    width: 200px;
+    background-color: dimgrey;
+    top: 0;
+    left: -200px;
+    position: fixed;
     float: left;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+.slidebar.active{
+    left: 0px;
+}
+
+
+/* .slidebar{
+    width: 200px;
+    background-color: dimgrey;
+    top: 0;
+    left: 0;
+    position: fixed;
+    float: left;
+    z-index: 1;
+    transition: 0.5s ease;
+} */
+
+.profile{
     text-align: center;
-    padding-left: 10px;
-    padding-top: 5px;
+}
+.profile img{
+    margin: 0 auto;
+    height: 120px;
+    width: 100px;
+    display: block;
+    border-radius: 50%;
+}
+.profile h3{
+    color: white;
+}
+.dashboard ul{
+    padding: 0px;
+    list-style: none;
+}
+.dashboard ul li a{
+    padding-top: 30px;
+    padding-left: 45px;
+    border-bottom: 1px solid grey;
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.dashboard ul li a:hover,
+.dashboard ul li a:active{
+    background-color: white;
+    color: dimgrey;
+    border-right: 3px solid black;
+}
+
+.wrapper .section.active{
+    width: calc(100% - 200px); 
+    margin-left: 200px;
+    
+    
+}
+.wrapper .section{
+    margin-left: 0;
+    width: 100%;
+    background-color: aquamarine;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+.wrapper .top_navbar{
+    padding: 0px 10px;
+    height: 30px;
+    display: flex;
+}
+.wrapper .top_navbar .hamburger a{
+    font-size: 28px;
+    color: white;
 }
